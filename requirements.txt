@@ -1,0 +1,6 @@
+torch
+pillow
+requests
+tqdm
+safetensors
+git+https://github.com/modelscope/DiffSynth-Studio.git
