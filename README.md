@@ -13,7 +13,7 @@ This node allows you to "extract" style, composition, or details from any image 
     * **< 16GB VRAM:** Automatically runs the heavy DINOv3 encoder on **CPU (RAM)** to prevent crashes.
     * **> 16GB VRAM:** Automatically uses **GPU** for maximum speed.
 * **📉 FP8 Model Support:** Built to work with highly compressed **FP8 models** (7GB vs 14GB), saving 50% VRAM with zero quality loss.
-* **💾 Smart Auto-Download:** Automatically pulls optimized models from the [markasd/QWEN_I2L](https://huggingface.co/markasd/QWEN_I2L) Hugging Face repository, so you don't need to manually hunt for files.
+* **💾 Smart Auto-Download:** Automatically pulls optimized models from the Hugging Face repository, so you don't need to manually hunt for files.
 * **🧹 VRAM Nuke:** Features a built-in safety mechanism that aggressively clears ComfyUI's VRAM cache before processing to ensure stability.
 * **✨ One-Click LoRA:** Takes an image input and outputs a ready-to-use LoRA file.
 
@@ -25,9 +25,10 @@ This node allows you to "extract" style, composition, or details from any image 
 1.  Open ComfyUI Manager.
 2.  Click **"Install via Git URL"**.
 3.  Paste this link: 
-    ```
-    [https://github.com/gajjar4/ComfyUI-Qwen-Image-i2L](https://github.com/gajjar4/ComfyUI-Qwen-Image-i2L)
-    ```
+    ```bash
+    https://github.com/gajjar4/ComfyUI-Qwen-Image-i2L
+    ``` 
+    
 4.  Click Install and Restart ComfyUI.
 
 ### **Method 2: Manual Installation**
@@ -37,7 +38,7 @@ This node allows you to "extract" style, composition, or details from any image 
     ```
 2.  Clone this repository:
     ```bash
-    git clone [https://github.com/gajjar4/ComfyUI-Qwen-Image-i2L.git](https://github.com/gajjar4/ComfyUI-Qwen-Image-i2L.git)
+    git clone https://github.com/gajjar4/ComfyUI-Qwen-Image-i2L.git
     ```
 3.  Install dependencies:
     ```bash
