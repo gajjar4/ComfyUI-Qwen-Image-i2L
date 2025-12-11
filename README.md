@@ -96,7 +96,7 @@ The generation process uses a complex chain of Vision Encoders and Adapters to "
 ### **Step 2: The "Generation" Workflow (Using the LoRA)**
 *Once you have the file, you don't need the Qwen nodes anymore.*
 
-1.  Load your standard Text-to-Image workflow (Flux, SDXL, etc.).
+1.  Load your standard Text-to-Image workflow (qwen)
 2.  Add a standard **Load LoRA** node.
 3.  Select the `my_cool_style.safetensors` you just created.
 4.  Generate images!
