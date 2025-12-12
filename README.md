@@ -16,10 +16,22 @@ This node allows you to "extract" style, composition, or details from any image 
 * **💾 Smart Auto-Download:** Automatically pulls optimized models from the Hugging Face repository, so you don't need to manually hunt for files.
 * **🧹 VRAM Nuke:** Features a built-in safety mechanism that aggressively clears ComfyUI's VRAM cache before processing to ensure stability.
 * **✨ One-Click LoRA:** Takes an image input and outputs a ready-to-use LoRA file.
+---
+
+File Name,Description
+SigLIP2-G384.safetensors,The Vision Encoder for semantic understanding.
+DINOv3-7B.safetensors,The large Vision Encoder for structure and details.
 
 ---
 
----
+File Name,Mode,Size,Description
+Qwen-Image-i2L-Style.safetensors,Style,~4.8GB,Captures artistic style only. Does not require manual CLIP.
+Qwen-Image-i2L-Coarse.safetensors,Coarse,~8-15GB,Captures structure/objects. Requires manual CLIP.
+Qwen-Image-i2L-Fine.safetensors,Fine,~8-15GB,Captures fine details. Requires manual CLIP.
+Qwen-Image-i2L-Bias.safetensors,Bias,~4GB,Helper for alignment.   
+--- 
+ https://huggingface.co/markasd/QWEN_I2L/tree/main 
+
 
 ## 🎨 Model Guide (Which one to use?)
 
