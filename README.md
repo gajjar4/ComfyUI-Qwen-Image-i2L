@@ -16,19 +16,31 @@ This node allows you to "extract" style, composition, or details from any image 
 * **💾 Smart Auto-Download:** Automatically pulls optimized models from the Hugging Face repository, so you don't need to manually hunt for files.
 * **🧹 VRAM Nuke:** Features a built-in safety mechanism that aggressively clears ComfyUI's VRAM cache before processing to ensure stability.
 * **✨ One-Click LoRA:** Takes an image input and outputs a ready-to-use LoRA file.
----
+### 📂 Folder Structure & Model Placement
 
-File Name,Description
-SigLIP2-G384.safetensors,The Vision Encoder for semantic understanding.
-DINOv3-7B.safetensors,The large Vision Encoder for structure and details.
+You need to create a folder named `I2L` inside your `ComfyUI/models/` directory.
 
----
+**Path:** `ComfyUI/models/I2L/`
 
-File Name,Mode,Size,Description
-Qwen-Image-i2L-Style.safetensors,Style,~4.8GB,Captures artistic style only. Does not require manual CLIP.
-Qwen-Image-i2L-Coarse.safetensors,Coarse,~8-15GB,Captures structure/objects. Requires manual CLIP.
-Qwen-Image-i2L-Fine.safetensors,Fine,~8-15GB,Captures fine details. Requires manual CLIP.
-Qwen-Image-i2L-Bias.safetensors,Bias,~4GB,Helper for alignment.   
+Inside that folder, create two sub-folders: `CLIPS` and `LORA models`.
+
+#### **1. The Vision Encoders (Required)**
+Place these inside: `ComfyUI/models/I2L/CLIPS/`
+
+| File Name | Description | Source |
+| :--- | :--- | :--- |
+| **`SigLIP2-G384.safetensors`** | Vision Encoder (Small) | [Download](https://huggingface.co/markasd/QWEN_I2L/blob/main/SigLIP2-G384.safetensors) |
+| **`DINOv3-7B.safetensors`** | Vision Encoder (Large) | [Download](https://huggingface.co/markasd/QWEN_I2L/blob/main/DINOv3-7B.safetensors) |
+
+#### **2. The Qwen Adapters (Pick what you need)**
+Place these inside: `ComfyUI/models/I2L/LORA models/`
+
+| File Name | Mode | Size | Description |
+| :--- | :--- | :--- | :--- |
+| **`Qwen-Image-i2L-Style.safetensors`** | Style | ~4.8GB | Captures artistic style only. **Does not require manual CLIP.** |
+| **`Qwen-Image-i2L-Coarse.safetensors`** | Coarse | ~8-15GB | Captures structure/objects. **Requires manual CLIP.** |
+| **`Qwen-Image-i2L-Fine.safetensors`** | Fine | ~8-15GB | Captures fine details. **Requires manual CLIP.** |
+| **`Qwen-Image-i2L-Bias.safetensors`** | Bias | ~4GB | Helper for alignment. |  
 --- 
  https://huggingface.co/markasd/QWEN_I2L/tree/main 
 
