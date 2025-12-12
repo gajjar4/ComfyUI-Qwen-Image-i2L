@@ -40,7 +40,7 @@ Place these inside: `ComfyUI/models/I2L/LORA models/`
 | **`Qwen-Image-i2L-Style.safetensors`** | Style | ~4.8GB | Captures artistic style only. **Does not require manual CLIP.** |
 | **`Qwen-Image-i2L-Coarse.safetensors`** | Coarse | ~8-15GB | Captures structure/objects. **Requires manual CLIP.** |
 | **`Qwen-Image-i2L-Fine.safetensors`** | Fine | ~8-15GB | Captures fine details. **Requires manual CLIP.** |
-| **`Qwen-Image-i2L-Bias.safetensors`** | Bias | ~4GB | Helper for alignment. |  
+| **`Qwen-Image-i2L-Bias.safetensors`** | Bias | Helper for alignment. |  
 --- 
  https://huggingface.co/markasd/QWEN_I2L/tree/main 
 
